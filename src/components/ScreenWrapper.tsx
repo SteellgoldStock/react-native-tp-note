@@ -1,6 +1,7 @@
+import { PropsWithChildren } from 'react'
 import { StyleSheet, View } from 'react-native'
 
-export const ScreenWrapper = ({ children }) => {
+export const ScreenWrapper = ({ children }: PropsWithChildren) => {
   return <View style={styles.container}>{children}</View>
 }
 

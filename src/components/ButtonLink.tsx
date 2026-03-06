@@ -1,6 +1,12 @@
-import { StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-export const ButtonLink = ({ text, onPress, inline }) => {
+type ButtonProps = {
+  text: string;
+  inline: boolean;
+  onPress: () => {};
+}
+
+export const ButtonLink = ({ text, onPress, inline }: ButtonProps) => {
   const content = <Text style={styles.link}>{text}</Text>
 
   if (inline) {

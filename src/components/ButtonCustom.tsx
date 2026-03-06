@@ -1,6 +1,12 @@
-import { StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-export const ButtonCustom = ({ text, onPress, secondary }) => {
+type ButtonProps = {
+  text: string;
+  onPress: () => {};
+  secondary?: boolean;
+}
+
+export const ButtonCustom = ({ text, onPress, secondary = false }: ButtonProps) => {
   return (
     <TouchableOpacity
       style={[styles.button, secondary ? styles.buttonSecondary : styles.buttonPrimary]}

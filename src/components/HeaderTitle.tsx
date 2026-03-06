@@ -1,6 +1,10 @@
-import { StyleSheet, Text } from 'react-native'
+import { StyleSheet, Text } from 'react-native';
 
-export const HeaderTitle = ({ text }) => {
+type HeaderProps = {
+  text: string;
+}
+
+export const HeaderTitle = ({ text }: HeaderProps) => {
   return <Text style={styles.headerTitle}>{text}</Text>
 }
 

@@ -1,5 +1,0 @@
-export * from './DashboardScreen'
-export * from './ForgotPasswordScreen'
-export * from './HomeScreen'
-export * from './LoginScreen'
-export * from './RegisterScreen'

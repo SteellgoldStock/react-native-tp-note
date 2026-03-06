@@ -1,6 +1,13 @@
-import { StyleSheet, TextInput } from 'react-native'
+import { StyleSheet, TextInput } from 'react-native';
 
-export const InputCustom = ({ value, onChangeText, placeholder, type }) => {
+type InputProps = {
+  value: string;
+  placeholder: string;
+  type: string;
+  onChangeText: () => {};
+}
+
+export const InputCustom = ({ value, onChangeText, placeholder, type }: InputProps) => {
   return (
     <TextInput
       value={value}

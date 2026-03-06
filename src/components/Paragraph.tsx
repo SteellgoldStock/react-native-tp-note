@@ -1,6 +1,10 @@
-import { StyleSheet, Text } from 'react-native'
+import { StyleSheet, Text } from 'react-native';
 
-export const Paragraph = ({ text }) => {
+type ParagraphProps = {
+  text: string;
+}
+
+export const Paragraph = ({ text }: ParagraphProps) => {
   return <Text style={styles.paragraph}>{text}</Text>
 }
 
